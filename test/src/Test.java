@@ -25,7 +25,8 @@ public class Test {
 	public static void main(String[] args) {
 		Test t=new Test();		
 		System.out.println("inicial "+t.algoritmoInicial());
-
+		long tempo=System.currentTimeMillis();
 		System.out.println("recursiva "+t.algoritmoRecursivo(0,1,20));
+		System.out.println("tempo recursivo:"+(System.currentTimeMillis()-tempo));
 	}
 }
